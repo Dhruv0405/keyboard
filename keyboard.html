@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>
+            Keyboard
+        </title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<div class="box">
+    <form class="keyboard" name="calc">
+    <input type="text" readonly class="value" name="txt"/>
+    <div class="buttom">
+        <div>
+    <span class="num" onclick="document.calc.txt.value += '~'">~</span>
+    <span class="num" onclick="document.calc.txt.value += '1'">1</span>
+    <span class="num" onclick="document.calc.txt.value += '2'">2</span>
+    <span class="num" onclick="document.calc.txt.value += '3'">3</span>
+    <span class="num" onclick="document.calc.txt.value += '4'">4</span>
+    <span class="num" onclick="document.calc.txt.value += '5'">5</span>
+    <span class="num" onclick="document.calc.txt.value += '6'">6</span>
+    <span class="num" onclick="document.calc.txt.value += '7'">7</span>
+    <span class="num" onclick="document.calc.txt.value += '8'">8</span>
+    <span class="num" onclick="document.calc.txt.value += '9'">9</span>
+    <span class="num" onclick="document.calc.txt.value += '0'">0</span>
+    <span class="num" onclick="document.calc.txt.value += '-'">-</span>
+    <span class="num" onclick="document.calc.txt.value += '+'">+</span>
+    <span class="num Back" onclick="calc.txt.value = ''">Clear</span>
+</div>
+<span class="num Tab" onclick="document.calc.txt.value += ''">Tab</span>
+    <span class="num" onclick="document.calc.txt.value += 'Q'">Q</span>
+    <span class="num" onclick="document.calc.txt.value += 'W'">W</span>
+    <span class="num" onclick="document.calc.txt.value += 'E'">E</span>
+    <span class="num" onclick="document.calc.txt.value += 'R'">R</span>
+    <span class="num" onclick="document.calc.txt.value += 'T'">T</span>
+    <span class="num" onclick="document.calc.txt.value += 'Y'">Y</span>
+    <span class="num" onclick="document.calc.txt.value += 'U'">U</span>
+    <span class="num" onclick="document.calc.txt.value += 'I'">I</span>
+    <span class="num" onclick="document.calc.txt.value += 'O'">O</span>
+    <span class="num" onclick="document.calc.txt.value += 'P'">P</span>
+    <span class="num" onclick="document.calc.txt.value += '{'">{</span>
+    <span class="num" onclick="document.calc.txt.value += '}'">}</span>
+    <span class="num ex" onclick="document.calc.txt.value += '|'">|</span>
+    <div>
+    <span class="num Caps" onclick="document.calc.txt.value += ''">Caps</span>
+    <span class="num" onclick="document.calc.txt.value += 'A'">A</span>
+    <span class="num" onclick="document.calc.txt.value += 'S'">S</span>
+    <span class="num" onclick="document.calc.txt.value += 'D'">D</span>
+    <span class="num" onclick="document.calc.txt.value += 'F'">F</span>
+    <span class="num" onclick="document.calc.txt.value += 'G'">G</span>
+    <span class="num" onclick="document.calc.txt.value += 'H'">H</span>
+    <span class="num" onclick="document.calc.txt.value += 'J'">J</span>
+    <span class="num" onclick="document.calc.txt.value += 'K'">K</span>
+    <span class="num" onclick="document.calc.txt.value += 'L'">L</span>
+    <span class="num" onclick="document.calc.txt.value += ':'">:</span>
+    <span class="num" onclick="document.calc.txt.value += '"'">"</span>
+    <span class="num Enter" onclick="document.calc.txt.value += ''">Enter</span>
+    </div>
+    <div>
+    <span class="num Shift" onclick="document.calc.txt.value += ''">Shift</span>
+    <span class="num" onclick="document.calc.txt.value += 'Z'">Z</span>
+    <span class="num" onclick="document.calc.txt.value += 'X'">X</span>
+    <span class="num" onclick="document.calc.txt.value += 'C'">C</span>
+    <span class="num" onclick="document.calc.txt.value += 'V'">V</span>
+    <span class="num" onclick="document.calc.txt.value += 'B'">B</span>
+    <span class="num" onclick="document.calc.txt.value += 'N'">N</span>
+    <span class="num" onclick="document.calc.txt.value += 'M'">M</span>
+    <span class="num" onclick="document.calc.txt.value += '<'"><</span>
+    <span class="num" onclick="document.calc.txt.value += '>'">></span>
+    <span class="num" onclick="document.calc.txt.value += '?'">?</span>
+    <span class="num Shift" onclick="document.calc.txt.value += ''">Shift</span>
+    </div>
+        <div>
+    <span class="num tool ctrl1" onclick="document.calc.txt.value += ''">Ctrl</span>
+    <span class="num tool" onclick="document.calc.txt.value += ''"><i class="fa fa-windows" aria-hidden="true"></i>
+    </span>
+    <span class="num tool" onclick="document.calc.txt.value += ''">Alt</span>
+    <span class="num Space" onclick="document.calc.txt.value += ' '"></span>
+    <span class="num tool" onclick="document.calc.txt.value += ''">Alt</span>
+    <span class="num tool" onclick="document.calc.txt.value += ''"><i class="fa fa-windows" aria-hidden="true"></i>
+    </span>
+    <span class="num tool ctrl2" onclick="document.calc.txt.value += ''">Ctrl</span>
+    </div>
+</div>
+    </form>
+</div>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>
+	VanillaTilt.init(document.querySelectorAll(".keyboard"),{
+		max: 15,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+
+	});
+</script>
+    </body>
+</html>
